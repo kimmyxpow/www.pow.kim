@@ -1,65 +1,65 @@
 <script lang="ts">
-import Icon from '@iconify/svelte';
-import { page } from '$app/stores';
-import LenisWrapper from './Wrapper.svelte';
+	import Icon from '@iconify/svelte';
+	import { page } from '$app/stores';
+	import LenisWrapper from './Wrapper.svelte';
 
-let isOpen = false;
+	let isOpen = false;
 
-const links = [
-	{
-		name: 'About',
-		url: '/about',
-		icon: 'solar:sticker-smile-circle-2-broken'
-	},
-	{
-		name: 'Project',
-		url: '/project',
-		icon: 'solar:code-square-broken'
-	}
-];
+	const links = [
+		{
+			name: 'About',
+			url: '/about',
+			icon: 'solar:sticker-smile-circle-2-broken'
+		},
+		{
+			name: 'Project',
+			url: '/project',
+			icon: 'solar:code-square-broken'
+		}
+	];
 
-const social = [
-	{
-		name: 'chat@pow.kim',
-		url: 'mailto:chat@pow.kim',
-		icon: 'uil:envelope'
-	},
-	{
-		name: '@powdotkim',
-		url: 'https://github.com/powdotkim',
-		icon: 'pajamas:github'
-	},
-	{
-		name: '@powdotkim',
-		url: 'https://www.instagram.com/powdotkim',
-		icon: 'mdi:instagram'
-	},
-	{
-		name: '@powdotkim',
-		url: 'https://x.com/powdotkim',
-		icon: 'ri:twitter-x-fill'
-	},
-	{
-		name: '@powdotkim',
-		url: 'https://www.youtube.com/@powdotkim',
-		icon: 'simple-line-icons:social-youtube'
-	},
-	{
-		name: '@powdotkim',
-		url: 'https://tiktok.com/@powdotkim',
-		icon: 'simple-icons:tiktok'
-	},
-	{
-		name: '@powdotkim',
-		url: 'https://www.threads.net/@powdotkim',
-		icon: 'akar-icons:threads-fill'
-	}
-	// {
-	// 	name: 'abinovalfauzi',
-	// 	url: 'https://www.linkedin.com/in/abinovalfauzi',
-	// 	icon: 'mdi:linkedin'
-	// }
-];
+	const social = [
+		{
+			name: 'chat@pow.kim',
+			url: 'mailto:chat@pow.kim',
+			icon: 'uil:envelope'
+		},
+		{
+			name: '@powdotkim',
+			url: 'https://github.com/powdotkim',
+			icon: 'pajamas:github'
+		},
+		{
+			name: '@powdotkim',
+			url: 'https://www.instagram.com/powdotkim',
+			icon: 'mdi:instagram'
+		},
+		{
+			name: '@powdotkim',
+			url: 'https://x.com/powdotkim',
+			icon: 'ri:twitter-x-fill'
+		},
+		{
+			name: '@powdotkim',
+			url: 'https://www.youtube.com/@powdotkim',
+			icon: 'simple-line-icons:social-youtube'
+		},
+		{
+			name: '@powdotkim',
+			url: 'https://tiktok.com/@powdotkim',
+			icon: 'simple-icons:tiktok'
+		},
+		{
+			name: '@powdotkim',
+			url: 'https://www.threads.net/@powdotkim',
+			icon: 'akar-icons:threads-fill'
+		}
+		// {
+		// 	name: 'abinovalfauzi',
+		// 	url: 'https://www.linkedin.com/in/abinovalfauzi',
+		// 	icon: 'mdi:linkedin'
+		// }
+	];
 </script>
 
 <LenisWrapper
@@ -108,7 +108,9 @@ const social = [
 <button
 	class="absolute inset-0 z-10 bg-black/20 backdrop-blur transition-all duration-300 {isOpen ? 'opacity-100' : 'pointer-events-none opacity-0'}"
 	on:click={() => (isOpen = false)}
-/>
+>
+	<span class="sr-only">Close Sidebar</span>
+</button>
 <button
 	on:click={() => (isOpen = true)}
 	class="fixed bottom-16 right-0 flex h-12 items-center gap-2 rounded-tl-xl border-l border-t border-gray-700 bg-black p-4 lg:hidden"

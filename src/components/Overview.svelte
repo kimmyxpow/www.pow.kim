@@ -1,12 +1,12 @@
 <script lang="ts">
-import Icon from '@iconify/svelte';
-import Highlight from 'svelte-highlight';
-import typescript from 'svelte-highlight/languages/typescript';
-import github from 'svelte-highlight/styles/edge-dark';
+	import Icon from '@iconify/svelte';
+	import Highlight from 'svelte-highlight';
+	import typescript from 'svelte-highlight/languages/typescript';
+	import github from 'svelte-highlight/styles/edge-dark';
 
-let activeTab = 'overview';
+	let activeTab = 'overview';
 
-const overviewCode = `type Nationality = string;
+	const overviewCode = `type Nationality = string;
 
 type Languages = Record<string, "Native" | "Fluent" | "Intermediate" | "Beginner">;
 
@@ -40,7 +40,7 @@ const devices: Devices = {
     Audio: ["Fantech たまご TAMAGO", "Baseus Encok WM01", "Baseus Encok C17"],
 };`;
 
-const workCode = `type Education = string[];
+	const workCode = `type Education = string[];
 
 type ExperienceItem = {
     type: string;
@@ -63,7 +63,7 @@ const experience: Experience = {
         {
             type: 'Self Employed',
             position: 'President',
-            duration: 'Jam 2024 - present',
+            duration: 'Jan 2024 - present',
             location: 'Bogor, West Java, Indonesia - Remote'
         },
         {
