@@ -1,48 +1,48 @@
 <script lang="ts">
-import Icon from '@iconify/svelte';
-import { onMount } from 'svelte';
-import gsap from 'gsap';
-import { setContext } from 'svelte';
+	import Icon from '@iconify/svelte';
+	import { onMount } from 'svelte';
+	import gsap from 'gsap';
+	import { setContext } from 'svelte';
 
-let marquee: HTMLDivElement;
-let marqueeContent: HTMLDivElement;
+	let marquee: HTMLDivElement;
+	let marqueeContent: HTMLDivElement;
 
-onMount(() => {
-	const marqueeContentClone = marqueeContent.cloneNode(true);
+	onMount(() => {
+		const marqueeContentClone = marqueeContent.cloneNode(true);
 
-	marquee.append(marqueeContentClone);
+		marquee.append(marqueeContentClone);
 
-	let tween: gsap.core.Tween;
+		let tween: gsap.core.Tween;
 
-	const playMarquee = () => {
-		let progress = tween ? tween.progress() : 0;
+		const playMarquee = () => {
+			let progress = tween ? tween.progress() : 0;
 
-		tween && tween.progress(0).kill();
+			tween && tween.progress(0).kill();
 
-		const width = marqueeContent.offsetWidth;
+			const width = marqueeContent.offsetWidth;
 
-		const gap = parseInt(getComputedStyle(marqueeContent).getPropertyValue('gap'), 10);
+			const gap = parseInt(getComputedStyle(marqueeContent).getPropertyValue('gap'), 10);
 
-		const distanceToTranslate = -1 * (gap + width);
+			const distanceToTranslate = -1 * (gap + width);
 
-		tween = gsap.fromTo(marquee.children, { x: 0 }, { x: distanceToTranslate, duration: 20, ease: 'none', repeat: -1 });
+			tween = gsap.fromTo(marquee.children, { x: 0 }, { x: distanceToTranslate, duration: 20, ease: 'none', repeat: -1 });
 
-		tween.progress(progress);
-	};
-
-	playMarquee();
-
-	function debounce(func: () => void) {
-		let timer: number;
-
-		return function (e: Event) {
-			if (timer) clearTimeout(timer);
-			timer = setTimeout(() => func(), 500, e);
+			tween.progress(progress);
 		};
-	}
 
-	window.addEventListener('resize', debounce(playMarquee));
-});
+		playMarquee();
+
+		function debounce(func: () => void) {
+			let timer: number;
+
+			return function (e: Event) {
+				if (timer) clearTimeout(timer);
+				timer = setTimeout(() => func(), 500, e);
+			};
+		}
+
+		window.addEventListener('resize', debounce(playMarquee));
+	});
 </script>
 
 <div class="fixed inset-x-0 top-0 z-10 flex h-16 items-center justify-center border-b-2 border-gray-800 bg-black">

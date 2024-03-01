@@ -1,10 +1,10 @@
 <script lang="ts">
-import Icon from '@iconify/svelte';
+	import Icon from '@iconify/svelte';
 
-const onCat = () => {
-	prompt('you clicked the cat, please enter the password');
-	alert('wrong password');
-};
+	const onCat = () => {
+		prompt('you clicked the cat, please enter the password');
+		alert('wrong password');
+	};
 </script>
 
 <div class="fixed inset-x-0 bottom-0 flex h-16 items-center bg-black">

@@ -4,7 +4,7 @@
     import Wrapper from '$components/Wrapper.svelte';
 </script>
 
-<Wrapper wrapperClass="md:h-[calc(100dvh-8rem)] h-auto">
+<Wrapper wrapperClass="md:h-[calc(100dvh-8rem)] h-[calc(50%-32px)] md:w-[calc(100%-340px)] shrink-0 w-full">
 
 # PalettePix
 

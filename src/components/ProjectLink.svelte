@@ -1,10 +1,10 @@
 <script lang="ts">
-import Icon from '@iconify/svelte';
+	import Icon from '@iconify/svelte';
 
-export let github: string = '#';
-export let web: string = '#';
-export let img: string;
-export let alt: string;
+	export let github: string = '#';
+	export let web: string = '#';
+	export let img: string;
+	export let alt: string;
 </script>
 
 <div class="not-prose flex flex-wrap gap-4">
@@ -26,4 +26,4 @@ export let alt: string;
 	</a>
 </div>
 
-<img class="aspect-video w-full" src={img} alt={alt} />
+<img class="aspect-video w-full" src={img} {alt} />

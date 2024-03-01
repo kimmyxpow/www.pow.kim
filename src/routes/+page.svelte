@@ -1,5 +1,5 @@
 <script>
-import Wrapper from '$components/Wrapper.svelte';
+	import Wrapper from '$components/Wrapper.svelte';
 </script>
 
 <Wrapper infinite={true} wrapperClass="hide-scroll">
