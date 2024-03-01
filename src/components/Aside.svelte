@@ -106,7 +106,7 @@ const social = [
 	</div>
 </LenisWrapper>
 <button
-	class="absolute inset-0 z-10 bg-black/20 backdrop-blur transition-all duration-300 {isOpen ? 'opacity-100' : 'pointer-events-none opacity-0'}"
+	class="absolute z-10 size-full bg-black/20 backdrop-blur transition-all duration-300 {isOpen ? 'opacity-100' : 'pointer-events-none opacity-0'}"
 	on:click={() => (isOpen = false)}
 >
 	<span class="sr-only">Close Sidebar</span>
