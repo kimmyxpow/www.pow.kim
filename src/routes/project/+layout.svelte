@@ -39,10 +39,13 @@
 			on this page.
 		</p>
 		<div class="not-prose space-y-4">
-			<div class="grid divide-y divide-gray-700 first:border-t first:border-gray-700 last:border-b last:border-gray-700">
+			<div class="">
 				{#each links as link}
 					{@const isCurrent = $page.url.pathname === `/project/${link.url}`}
-					<a href={isCurrent ? '/project' : `/project/${link.url}`} class="group flex items-center justify-between py-4">
+					<a
+						href={isCurrent ? '/project' : `/project/${link.url}`}
+						class="group flex items-center justify-between border-b border-gray-700 py-4 first:border-t"
+					>
 						<div class="flex w-full items-center gap-4">
 							<div
 								class="relative flex shrink-0 items-center justify-center overflow-hidden rounded-full text-sm transition-all duration-300 {isCurrent

@@ -85,9 +85,13 @@
 		{/each}
 	</div>
 	<span class="inline-block font-black uppercase text-gray-400">Social</span>
-	<div class="grid divide-y last:border-b">
+	<div>
 		{#each social as link}
-			<a href={link.url} target="_blank" class="flex items-center gap-2 py-4 text-lg text-gray-400 first:border-t last:border-b hover:text-white">
+			<a
+				href={link.url}
+				target="_blank"
+				class="flex items-center gap-2 border-b border-gray-700 py-4 text-lg text-gray-400 transition-all duration-200 first:border-t hover:text-white"
+			>
 				<Icon icon={link.icon} class="text-2xl" />
 				{link.name}
 				<Icon icon="line-md:external-link-rounded" class="ml-auto text-2xl" />

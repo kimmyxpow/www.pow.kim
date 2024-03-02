@@ -117,13 +117,13 @@ const education: Education = ['Wikrama Bogor Vocational High School'];`;
 
 <div class="flex max-w-max overflow-hidden rounded-t-lg">
 	<button
-		class="flex items-center gap-2 px-4 py-2 {activeTab === 'overview' ? 'bg-gray-800' : 'bg-gray-900 hover:bg-gray-800'}"
+		class="flex items-center gap-2 px-4 py-2 {activeTab === 'overview' ? 'bg-gray-800' : 'bg-gray-900 transition-all duration-200 hover:bg-gray-800'}"
 		on:click={() => (activeTab = 'overview')}
 	>
 		<Icon icon="akar-icons:typescript-fill" /> overview.ts
 	</button>
 	<button
-		class="flex items-center gap-2 px-4 py-2 {activeTab === 'work' ? 'bg-gray-800' : 'bg-gray-900 hover:bg-gray-800'}"
+		class="flex items-center gap-2 px-4 py-2 {activeTab === 'work' ? 'bg-gray-800' : 'bg-gray-900 transition-all duration-200 hover:bg-gray-800'}"
 		on:click={() => (activeTab = 'work')}
 	>
 		<Icon icon="akar-icons:typescript-fill" /> work.ts
