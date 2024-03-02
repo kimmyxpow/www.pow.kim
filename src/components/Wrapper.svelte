@@ -3,17 +3,18 @@
 	import { onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
 	import { twMerge } from 'tailwind-merge';
+	import { page } from '$app/stores';
 
 	export let wrapperClass = '';
 	export let contentClass = '';
 	export let infinite = false;
 
-	const randomId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+	let wrapper: HTMLDivElement;
+	let content: HTMLDivElement;
+
+	const projectWrapperClass = 'md:h-[calc(100dvh-8rem)] h-[calc(50%-32px)] md:w-[calc(100%-340px)] shrink-0 w-full';
 
 	onMount(() => {
-		const wrapper = document.querySelector<HTMLElement>('#scroll-wrapper-' + randomId)!;
-		const content = document.querySelector<HTMLElement>('#scroll-wrapper-' + randomId)!;
-
 		const lenis = new Lenis({
 			wrapper,
 			content,
@@ -36,8 +37,11 @@
 	});
 </script>
 
-<div id="scroll-wrapper-{randomId}" class={twMerge('h-[calc(100dvh-8rem)] overflow-y-auto', wrapperClass)}>
-	<div in:fly={{ y: -60, duration: 500, delay: 500 }} out:fly={{ y: 60, duration: 500 }} id="scroll-content-{randomId}" class={twMerge('p-8', contentClass)}>
+<div
+	bind:this={wrapper}
+	class={twMerge('h-[calc(100dvh-8rem)] overflow-y-auto', $page.url.pathname.startsWith('/project') ? projectWrapperClass : '', wrapperClass)}
+>
+	<div in:fly={{ y: -60, duration: 500, delay: 500 }} out:fly={{ y: 60, duration: 500 }} bind:this={content} class={twMerge('p-8', contentClass)}>
 		<slot />
 	</div>
 </div>

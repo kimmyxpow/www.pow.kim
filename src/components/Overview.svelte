@@ -2,7 +2,7 @@
 	import Icon from '@iconify/svelte';
 	import Highlight from 'svelte-highlight';
 	import typescript from 'svelte-highlight/languages/typescript';
-	import github from 'svelte-highlight/styles/edge-dark';
+	import github from 'svelte-highlight/styles/github-dark';
 
 	let activeTab = 'overview';
 
@@ -29,7 +29,7 @@ const technology: Technology = {
     PHP: ['Laravel', 'Phalcon Framework'],
     SQL: ['MySQL', 'PostgreSQL'],
     NoSQL: ['MongoDB'],
-    "No Code Solution": ['Webflow']
+    "No-Code Solution": ['Webflow']
 };
 
 const devices: Devices = {
@@ -132,6 +132,6 @@ const education: Education = ['Wikrama Bogor Vocational High School'];`;
 <Highlight
 	language={typescript}
 	code={activeTab === 'overview' ? overviewCode : workCode}
-	class="not-prose max-h-[calc(100dvh-16rem)] overflow-hidden overflow-y-auto rounded-b-xl"
+	class="not-prose max-h-[calc(100dvh-16rem)] overflow-hidden overflow-y-auto rounded-b-xl [&>code]:bg-gray-800"
 	data-lenis-prevent
 />

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
 	import { page } from '$app/stores';
-	import LenisWrapper from './Wrapper.svelte';
+	import Wrapper from './Wrapper.svelte';
 
 	let isOpen = false;
 
@@ -46,23 +46,13 @@
 		},
 		{
 			name: '@powdotkim',
-			url: 'https://tiktok.com/@powdotkim',
-			icon: 'simple-icons:tiktok'
-		},
-		{
-			name: '@powdotkim',
 			url: 'https://www.threads.net/@powdotkim',
 			icon: 'akar-icons:threads-fill'
 		}
-		// {
-		// 	name: 'abinovalfauzi',
-		// 	url: 'https://www.linkedin.com/in/abinovalfauzi',
-		// 	icon: 'mdi:linkedin'
-		// }
 	];
 </script>
 
-<LenisWrapper
+<Wrapper
 	wrapperClass="absolute z-30 h-[calc(100dvh-8rem)] min-w-[300px] max-w-[300px] shrink-0 border-r border-gray-800 bg-black transition-all duration-300 lg:relative lg:translate-x-0 {isOpen
 		? 'translate-x-0'
 		: '-translate-x-full'}"
@@ -104,9 +94,9 @@
 			</a>
 		{/each}
 	</div>
-</LenisWrapper>
+</Wrapper>
 <button
-	class="absolute z-10 size-full bg-black/20 backdrop-blur transition-all duration-300 {isOpen ? 'opacity-100' : 'pointer-events-none opacity-0'}"
+	class="absolute z-20 size-full bg-black/20 backdrop-blur transition-all duration-300 {isOpen ? 'opacity-100' : 'pointer-events-none opacity-0'}"
 	on:click={() => (isOpen = false)}
 >
 	<span class="sr-only">Close Sidebar</span>

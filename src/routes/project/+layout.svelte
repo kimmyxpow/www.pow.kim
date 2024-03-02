@@ -32,9 +32,7 @@
 </script>
 
 <div class="flex h-full flex-col md:flex-row">
-	<Wrapper
-		wrapperClass="h-[calc(50%-32px)] w-full shrink-0 border-b border-gray-800 md:h-[calc(100dvh-8rem)] md:w-[calc(100%-340px)] md:min-w-[340px] md:max-w-[340px] md:border-r"
-	>
+	<Wrapper wrapperClass="border-b border-gray-800 md:min-w-[340px] md:max-w-[340px] md:border-r">
 		<h1>Project</h1>
 		<p>
 			Explore a variety of innovative solutions, from web development to mobile apps. Dive into Noval's creative and technically proficient work showcased
