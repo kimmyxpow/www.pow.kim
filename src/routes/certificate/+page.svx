@@ -8,6 +8,8 @@
 
 # Certificate
 
+Explore Noval's collection of professional certifications, as well as certificates from various courses, events, seminars, and competitions. Dive into the diverse range of qualifications that showcase Noval's commitment to continuous learning and professional development.
+
 <Certificates />
 
 </Wrapper>
