@@ -62,26 +62,26 @@
 		</svg>
 	</a>
 	<div class="relative overflow-hidden">
-		<div class="pointer-events-none absolute inset-y-0 right-0 z-10 w-full max-w-32 border-none bg-gradient-to-r from-transparent to-black" />
-		<div class="pointer-events-none absolute inset-y-0 left-0 z-10 w-full max-w-32 border-none bg-gradient-to-r from-black to-transparent" />
+		<div class="pointer-events-none absolute inset-y-0 right-0 z-10 w-full max-w-10 border-none bg-gradient-to-r from-transparent to-black sm:max-w-32" />
+		<div class="pointer-events-none absolute inset-y-0 left-0 z-10 w-full max-w-10 border-none bg-gradient-to-r from-black to-transparent sm:max-w-32" />
 		<div class="flex gap-10 px-8" bind:this={marquee}>
 			<div class="flex shrink-0 items-center gap-4 sm:gap-10" bind:this={marqueeContent}>
 				<Icon icon="mingcute:star-fill" class="shrink-0 text-xl text-accent-600 sm:text-2xl" />
-				<span class="whitespace-nowrap text-lg font-bold text-white">Open for Oportunity</span>
+				<span class="whitespace-nowrap font-bold text-white sm:text-lg">Open for Oportunity</span>
 				<Icon icon="mingcute:star-fill" class="shrink-0 text-xl text-accent-600 sm:text-2xl" />
-				<span class="whitespace-nowrap text-lg font-bold text-white">Software Engineer</span>
+				<span class="whitespace-nowrap font-bold text-white sm:text-lg">Software Engineer</span>
 				<Icon icon="mingcute:star-fill" class="shrink-0 text-xl text-accent-600 sm:text-2xl" />
-				<span class="whitespace-nowrap text-lg font-bold text-white">Frontend Developer</span>
+				<span class="whitespace-nowrap font-bold text-white sm:text-lg">Frontend Developer</span>
 				<Icon icon="mingcute:star-fill" class="shrink-0 text-xl text-accent-600 sm:text-2xl" />
-				<span class="whitespace-nowrap text-lg font-bold text-white">Web Developer</span>
+				<span class="whitespace-nowrap font-bold text-white sm:text-lg">Web Developer</span>
 				<Icon icon="mingcute:star-fill" class="shrink-0 text-xl text-accent-600 sm:text-2xl" />
-				<span class="whitespace-nowrap text-lg font-bold text-white">Open for Oportunity</span>
+				<span class="whitespace-nowrap font-bold text-white sm:text-lg">Open for Oportunity</span>
 				<Icon icon="mingcute:star-fill" class="shrink-0 text-xl text-accent-600 sm:text-2xl" />
-				<span class="whitespace-nowrap text-lg font-bold text-white">Software Engineer</span>
+				<span class="whitespace-nowrap font-bold text-white sm:text-lg">Software Engineer</span>
 				<Icon icon="mingcute:star-fill" class="shrink-0 text-xl text-accent-600 sm:text-2xl" />
-				<span class="whitespace-nowrap text-lg font-bold text-white">Frontend Developer</span>
+				<span class="whitespace-nowrap font-bold text-white sm:text-lg">Frontend Developer</span>
 				<Icon icon="mingcute:star-fill" class="shrink-0 text-xl text-accent-600 sm:text-2xl" />
-				<span class="whitespace-nowrap text-lg font-bold text-white">Web Developer</span>
+				<span class="whitespace-nowrap font-bold text-white sm:text-lg">Web Developer</span>
 			</div>
 		</div>
 	</div>
