@@ -109,6 +109,6 @@
 	on:click={() => (isOpen = !isOpen)}
 	class="fixed bottom-16 right-0 z-10 flex h-12 items-center gap-2 rounded-tl-xl border-l border-t border-gray-700 bg-black p-4 lg:hidden"
 >
-	<Icon icon={isOpen ? 'mingcute:close-fill' : 'ri:menu-5-line'} />
-	{isOpen ? 'Close' : 'Open'} Sidebar
+	<Icon icon={'ri:menu-5-line'} />
+	Open Sidebar
 </button>
