@@ -1,5 +1,5 @@
 <script>
-    import image from '$lib/openseries.png'
+    import image from '$lib/thumbnails/img/openseries.png'
     import ProjectLink from '$components/ProjectLink.svelte'
     import Wrapper from '$components/Wrapper.svelte';
 </script>

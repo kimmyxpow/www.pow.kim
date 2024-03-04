@@ -1,0 +1,13 @@
+<script>
+    import Wrapper from '$components/Wrapper.svelte';
+    import Overview from '$components/Overview.svelte';
+    import Certificates from '$components/Certificates.svelte';
+</script>
+
+<Wrapper>
+
+# Certificate
+
+<Certificates />
+
+</Wrapper>

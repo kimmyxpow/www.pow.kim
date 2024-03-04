@@ -15,6 +15,11 @@
 			name: 'Project',
 			url: '/project',
 			icon: 'solar:code-square-broken'
+		},
+		{
+			name: 'Certificate',
+			url: '/certificate',
+			icon: 'ph:certificate'
 		}
 	];
 

@@ -1,5 +1,5 @@
 <script>
-    import image from '$lib/groweb.png'
+    import image from '$lib/thumbnails/img/groweb.png'
     import ProjectLink from '$components/ProjectLink.svelte'
     import Wrapper from '$components/Wrapper.svelte';
 </script>
