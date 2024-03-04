@@ -1,5 +1,5 @@
 <script>
-    import image from '$lib/thumbnails/img/bagiskrip.png'
+    import image from '$lib/img/thumbnails/bagiskrip.png'
     import ProjectLink from '$components/ProjectLink.svelte'
     import Wrapper from '$components/Wrapper.svelte';
 </script>
