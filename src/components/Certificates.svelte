@@ -26,7 +26,7 @@
 		</button>
 	</div>
 	{#if isProfessional}
-		<img class="rounded-xl" src="/img/certificates/professional/1.jpg" alt="Sertificate" />
+		<img class="rounded-xl" src="/img/certificates/professional/1.webp" alt="Sertificate" />
 	{:else}
 		<div class="gap-2 space-y-2 sm:columns-2 md:columns-3">
 			{#each new Array(38) as _, i}
