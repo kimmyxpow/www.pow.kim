@@ -26,11 +26,11 @@
 		</button>
 	</div>
 	{#if isProfessional}
-		<img class="rounded-xl" src="/img/certificates/professional/1.webp" alt="Sertificate" />
+		<enhanced:img class="rounded-xl" src="/img/certificates/professional/1.webp" alt="Sertificate" />
 	{:else}
 		<div class="gap-2 space-y-2 sm:columns-2 md:columns-3">
 			{#each new Array(38) as _, i}
-				<img class="break-inside-avoid-column rounded-xl" src="/img/certificates/{i + 1}.webp" alt="Sertificate {i + 1}" />
+				<enhanced:img class="break-inside-avoid-column rounded-xl" src="/img/certificates/{i + 1}.webp" alt="Sertificate {i + 1}" />
 			{/each}
 		</div>
 	{/if}

@@ -26,4 +26,4 @@
 	</a>
 </div>
 
-<img class="aspect-video w-full" src={img} {alt} />
+<enhanced:img class="aspect-video w-full" src={img} {alt} />
