@@ -1,5 +1,5 @@
 <script>
-    import image from '$lib/img/thumbnails/hollux.png'
+    import image from '$lib/img/thumbnails/hollux.png?enhanced'
     import ProjectLink from '$components/ProjectLink.svelte'
     import Wrapper from '$components/Wrapper.svelte';
 </script>
