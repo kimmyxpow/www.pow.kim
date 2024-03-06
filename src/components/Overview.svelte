@@ -132,6 +132,6 @@ const education: Education = ['Wikrama Bogor Vocational High School'];`;
 <Highlight
 	language={typescript}
 	code={activeTab === 'overview' ? overviewCode : workCode}
-	class="not-prose max-h-[calc(100dvh-16rem)] overflow-hidden overflow-y-auto rounded-b-xl rounded-tr-xl [&>code]:bg-gray-800"
+	class="not-prose max-h-[calc(100dvh-16rem)] overflow-hidden overflow-y-auto rounded-b-xl rounded-tr-xl text-sm leading-relaxed [&>code]:bg-gray-800"
 	data-lenis-prevent
 />
