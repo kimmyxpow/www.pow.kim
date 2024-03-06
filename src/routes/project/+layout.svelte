@@ -61,7 +61,7 @@
 							</h2>
 						</div>
 						<Icon
-							icon="solar:map-arrow-down-linear"
+							icon="solar:map-arrow-down-broken"
 							class="shrink-0 text-2xl transition-all duration-300 md:-rotate-90 {isCurrent
 								? 'translate-x-0 scale-100'
 								: 'translate-x-6 scale-0 group-hover:translate-x-0 group-hover:scale-100'}"
@@ -76,7 +76,7 @@
 			>
 				<Icon icon="bi:github" class="text-xl" />
 				Other Project
-				<Icon icon="line-md:external-link-rounded" class="ml-auto text-2xl" />
+				<Icon icon="solar:arrow-right-up-broken" class="ml-auto text-2xl" />
 			</a>
 		</div>
 	</Wrapper>

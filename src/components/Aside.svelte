@@ -19,7 +19,7 @@
 		{
 			name: 'Certificate',
 			url: '/certificate',
-			icon: 'ph:certificate'
+			icon: 'solar:medal-ribbons-star-broken'
 		}
 	];
 
@@ -82,7 +82,7 @@
 				{link.name}
 				<Icon
 					icon="solar:arrow-right-broken"
-					class="ml-auto text-4xl transition-all duration-300 {isCurrent
+					class="ml-auto text-2xl transition-all duration-300 {isCurrent
 						? 'translate-x-0 opacity-100'
 						: '-translate-x-10 opacity-0 group-hover:translate-x-0 group-hover:opacity-100'}"
 				/>
@@ -99,7 +99,7 @@
 			>
 				<Icon icon={link.icon} class="text-2xl" />
 				{link.name}
-				<Icon icon="line-md:external-link-rounded" class="ml-auto text-2xl" />
+				<Icon icon="solar:arrow-right-up-broken" class="ml-auto text-2xl" />
 			</a>
 		{/each}
 	</div>
