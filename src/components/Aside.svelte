@@ -15,12 +15,12 @@
 			name: 'Project',
 			url: '/project',
 			icon: 'solar:code-square-broken'
-		},
-		{
-			name: 'Certificate',
-			url: '/certificate',
-			icon: 'solar:medal-ribbons-star-broken'
 		}
+		// {
+		// 	name: 'Certificate',
+		// 	url: '/certificate',
+		// 	icon: 'solar:medal-ribbons-star-broken'
+		// }
 	];
 
 	const social = [
