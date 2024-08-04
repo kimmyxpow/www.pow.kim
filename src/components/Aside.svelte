@@ -30,28 +30,28 @@
 			icon: 'uil:envelope'
 		},
 		{
-			name: '@powdotkim',
-			url: 'https://github.com/powdotkim',
+			name: '@kimmyxpow',
+			url: 'https://github.com/kimmyxpow',
 			icon: 'pajamas:github'
 		},
 		{
-			name: '@powdotkim',
-			url: 'https://www.instagram.com/powdotkim',
+			name: '@kimmyxpow',
+			url: 'https://www.instagram.com/kimmyxpow',
 			icon: 'mdi:instagram'
 		},
 		{
-			name: '@powdotkim',
-			url: 'https://x.com/powdotkim',
+			name: '@kimmyxpow',
+			url: 'https://x.com/kimmyxpow',
 			icon: 'ri:twitter-x-fill'
 		},
+		// {
+		// 	name: '@kimmyxpow',
+		// 	url: 'https://www.youtube.com/@kimmyxpow',
+		// 	icon: 'simple-line-icons:social-youtube'
+		// },
 		{
-			name: '@powdotkim',
-			url: 'https://www.youtube.com/@powdotkim',
-			icon: 'simple-line-icons:social-youtube'
-		},
-		{
-			name: '@powdotkim',
-			url: 'https://www.threads.net/@powdotkim',
+			name: '@kimmyxpow',
+			url: 'https://www.threads.net/@kimmyxpow',
 			icon: 'akar-icons:threads-fill'
 		}
 	];
