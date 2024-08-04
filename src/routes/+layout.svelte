@@ -1,8 +1,5 @@
 <script lang="ts">
 	import '../app.css';
-	import Header from '$components/Header.svelte';
-	import Aside from '$components/Aside.svelte';
-	import Footer from '$components/Footer.svelte';
 </script>
 
 <svelte:head>
@@ -41,13 +38,4 @@
 	<meta property="twitter:image" content="https://www.pow.kim/meta-tags.png" />
 </svelte:head>
 
-<div class="flex h-dvh max-h-dvh min-h-dvh flex-col overflow-hidden bg-black">
-	<Header />
-	<div class="relative z-0 flex h-full py-16">
-		<Aside />
-		<div class="prose prose-invert w-full max-w-none prose-img:rounded-xl prose-img:border prose-img:border-gray-700">
-			<slot />
-		</div>
-	</div>
-	<Footer />
-</div>
+<slot />

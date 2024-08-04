@@ -12,7 +12,11 @@
     "format": "prettier --write ."
   },
   "devDependencies": {
+    "@iconify-json/mingcute": "^1.1.16",
+    "@iconify-json/solar": "^1.1.9",
     "@iconify/svelte": "^3.1.6",
+    "@iconify/tailwind": "^0.1.4",
+    "@svelte-put/clickoutside": "^3.0.1",
     "@sveltejs/adapter-auto": "^3.0.0",
     "@sveltejs/adapter-static": "^3.0.1",
     "@sveltejs/enhanced-img": "^0.1.8",
