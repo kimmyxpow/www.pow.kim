@@ -7,6 +7,12 @@
 
 	const links = [
 		{
+			name: 'See My CV',
+			url: 'https://r.pow.kim',
+			icon: 'solar:case-outline',
+			target: '_blank'
+		},
+		{
 			name: 'About',
 			url: '/about',
 			icon: 'solar:sticker-smile-circle-2-broken'
@@ -68,12 +74,14 @@
 		Hello World! Step into this digital space where lines of code come to life. Take a virtual seat and let's dive into the captivating realm of software
 		together.
 	</p>
+	<p class="text-emerald-400">I'm currently open to new opportunities, see my cv below or feel free to contact me :D</p>
 	<div class="grid gap-2">
 		{#each links as link}
 			{@const isCurrent = $page.url.pathname.startsWith(link.url)}
 			<a
 				on:click={() => (isOpen = false)}
 				href={link.url}
+				target={link.target}
 				class="group flex items-center gap-2 rounded-2xl border-2 border-gray-800 p-4 text-left text-lg font-bold uppercase text-gray-300 transition-all duration-300 {isCurrent
 					? 'bg-gray-800'
 					: 'hover:bg-gray-800'}"

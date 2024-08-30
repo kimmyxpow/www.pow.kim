@@ -10,6 +10,7 @@ export default {
 		colors: {
 			gray: colors.zinc,
 			accent: colors.indigo,
+			emerald: colors.emerald,
 			white: colors.white,
 			black: colors.black,
 			transparent: colors.transparent
